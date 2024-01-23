@@ -1,6 +1,7 @@
 import React from 'react';
 import Video1 from './background.mp4';
 import { Helmet } from 'react-helmet'; // Ensure you have installed the react-helmet package
+import { Link } from 'react-router-dom';
 
 function Hero() {
   return (
@@ -28,8 +29,11 @@ function Hero() {
 
           {/* Text */}
           <h1 className="text-2xl lg:text-3xl font-bold mb-2" style={{ lineHeight: '1.2' }}>LET YOUR LISTINGS BE EXTRAORDINARY.</h1>
-          <p className="text-xl lg:text-2xl mb-4" style={{ lineHeight: '1.5' }}>Listing Media & Branding Content For Agents in GNV & Alachua</p>
-          <button className="mt-4 bg-indigo-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">View Services</button>
+          <p className="text-xl lg:text-2xl mb-4" style={{ lineHeight: '1.5', marginBottom: '3rem' }}>Listing Media & Branding Content For Agents in GNV & Alachua</p>
+         
+          <Link to="/services" className="mt-4 bg-indigo-500 hover:bg-blue-700 text-white font-bold py-3 px-5 rounded" >
+  View Services
+</Link>
         </div>
       </div>
     </>
@@ -37,3 +41,4 @@ function Hero() {
 }
 
 export default Hero;
+

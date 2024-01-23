@@ -7,7 +7,7 @@ function ValuesSection() {
       <div className="container px-5 py-16 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
         <img src={"/100.png"} alt="Elevating Listings" className="mx-auto mb-4" style={{ maxHeight: '70px' }} /> {/* Adjust maxHeight as needed */}
-          <h2 className="text-4xl font-medium title-font mb-4 text-gray-900">Dedicated to Elevating Your Listings</h2>
+          <h2 className="text-4xl font-medium title-font mb-4 text-gray-900">We Exist To Serve You, The Agent</h2>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">At BRSE Real Estate Photography, we're not just a company; we're your creative partners in real estate marketing. We specialize in crafting striking visuals through professional property photography and videography, enhancing your brand identity, and supporting your sales efforts. Our skilled team, comprising over two decades of collective experience with photographers, visual editors, and client relations specialists, is at the forefront of delivering bespoke real estate media solutions. Your dedication to your brand resonates with us, and we're here to ensure that every snapshot and frame adds value to your hard-earned reputation.
 </p>
         </div>
