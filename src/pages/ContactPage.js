@@ -7,7 +7,9 @@ function ContactPage() {
   return (
     <div>
     <Header />
+    <div className="py-16">
     <Contact />
+    </div>
     </div>
   );
 }
