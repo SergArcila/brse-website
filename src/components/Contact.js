@@ -5,7 +5,7 @@ function ContactUsSection() {
     <section className="text-gray-600 body-font relative" style={{ backgroundImage: 'url(/background3.png)', backgroundSize: 'cover' }}>
         {/* Centered Contact Us Header */}
         <div className="flex justify-center items-center p-4"style={{ paddingTop: '6rem'}}>
-            <h2 className="text-gray-900 text-4xl mb-4 font-bold title-font">Contact Us</h2>
+            <h2 className="text-gray-900 text-6xl mb-4 font-bold title-font">Contact Us</h2>
         </div>
 
         <div className="container px-5 py-12 mx-auto flex sm:flex-nowrap flex-wrap">

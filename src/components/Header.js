@@ -6,7 +6,7 @@ import { useLocation } from 'react-router-dom';
 function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
     const location = useLocation();
-    const isMobileNavVisible = true;
+    const [isMobileNavVisible, setIsMobileNavVisible] = useState(false); // Added state for mobile nav visibility
   
     useEffect(() => {
       const handleScroll = () => {
@@ -18,7 +18,7 @@ function Header() {
     }, []);
   
     // Determine if the current path is one that requires a solid header
-  const needsSolidHeader = location.pathname === '/contact' || location.pathname === '/portfolio';
+  const needsSolidHeader = location.pathname === '/contact' || location.pathname === '/about';
 
   // Build the header class string based on the scroll position and current path
   const headerClass = `fixed w-full z-30 transition duration-300 ease-in-out ${
@@ -30,6 +30,10 @@ function Header() {
       // Reset the scroll state every time the location changes
       setIsScrolled(false);
     }, [location]);
+
+    const toggleMobileNav = () => {
+        setIsMobileNavVisible(!isMobileNavVisible); // Toggle mobile nav visibility
+    };
   
     const headerStyle = `fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${isScrolled ? 'bg-gray-800' : 'bg-gray-800 md:bg-transparent'}`;
   
@@ -43,16 +47,16 @@ function Header() {
 
         {/* Mobile Nav Icon */}
         <div className="md:hidden flex items-center">
-          <button>
-            <FaBars className="text-white text-2xl" />
-          </button>
+        <button onClick={toggleMobileNav}> {/* Add onClick event handler */}
+                        <FaBars className="text-white text-2xl" />
+                    </button>
         </div>
 
         {/* Navigation Links */}
         <nav className={`hidden md:flex flex-grow items-center justify-center ${isMobileNavVisible ? 'flex' : 'hidden'}`}>
           <NavLink to="/" className={({ isActive }) => `mx-5 hover:text-gray-300 ${isActive ? 'text-gray-300' : 'text-white'}`}>Home</NavLink>
           <NavLink to="/services" className={({ isActive }) => `mx-5 hover:text-gray-300 ${isActive ? 'text-gray-300' : 'text-white'}`}>Services</NavLink>
-          <NavLink to="/portfolio" className={({ isActive }) => `mx-5 hover:text-gray-300 ${isActive ? 'text-gray-300' : 'text-white'}`}>About us</NavLink>
+          <NavLink to="/about" className={({ isActive }) => `mx-5 hover:text-gray-300 ${isActive ? 'text-gray-300' : 'text-white'}`}>About us</NavLink>
           <NavLink to="/contact" className={({ isActive }) => `mx-5 hover:text-gray-300 ${isActive ? 'text-gray-300' : 'text-white'}`}>Contact</NavLink>
         </nav>
 
@@ -69,7 +73,7 @@ function Header() {
         <div className="md:hidden bg-gray-800">
           <NavLink to="/" className="block hover:text-gray-300 text-white p-4">Home</NavLink>
           <NavLink to="/services" className="block hover:text-gray-300 text-white p-4">Services</NavLink>
-          <NavLink to="/portfolio" className="block hover:text-gray-300 text-white p-4">Portfolio</NavLink>
+          <NavLink to="/about" className="block hover:text-gray-300 text-white p-4">About us</NavLink>
           <NavLink to="/contact" className="block hover:text-gray-300 text-white p-4">Contact</NavLink>
         </div>
       )}
