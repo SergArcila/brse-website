@@ -98,7 +98,10 @@ function Packages() {
   return (
     <div className="bg-gray-100 py-16">
       <div className="text-center mb-12">
-        <h2 className="text-6xl font-bold">Packages</h2>
+      <div className="text-center mb-4">
+        <h2 className="text-6xl font-bold">Our Packages</h2>
+        </div>
+        <p className="text-xl text-blue-600 font-semibold mb-6">Created just for you. The Realtor® </p>
       </div>
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap -mx-4">

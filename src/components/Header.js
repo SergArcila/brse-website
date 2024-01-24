@@ -52,7 +52,7 @@ function Header() {
         <nav className={`hidden md:flex flex-grow items-center justify-center ${isMobileNavVisible ? 'flex' : 'hidden'}`}>
           <NavLink to="/" className={({ isActive }) => `mx-5 hover:text-gray-300 ${isActive ? 'text-gray-300' : 'text-white'}`}>Home</NavLink>
           <NavLink to="/services" className={({ isActive }) => `mx-5 hover:text-gray-300 ${isActive ? 'text-gray-300' : 'text-white'}`}>Services</NavLink>
-          <NavLink to="/portfolio" className={({ isActive }) => `mx-5 hover:text-gray-300 ${isActive ? 'text-gray-300' : 'text-white'}`}>Portfolio</NavLink>
+          <NavLink to="/portfolio" className={({ isActive }) => `mx-5 hover:text-gray-300 ${isActive ? 'text-gray-300' : 'text-white'}`}>About us</NavLink>
           <NavLink to="/contact" className={({ isActive }) => `mx-5 hover:text-gray-300 ${isActive ? 'text-gray-300' : 'text-white'}`}>Contact</NavLink>
         </nav>
 

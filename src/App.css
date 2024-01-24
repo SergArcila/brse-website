@@ -41,3 +41,24 @@
     transform: rotate(360deg);
   }
 }
+
+/* Enter transition */
+.fade-enter {
+  opacity: 1;
+  z-index: 1;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+/* Exit transition */
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}

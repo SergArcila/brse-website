@@ -9,7 +9,7 @@ const photos = [
   { id: '3', src: '/base.jpeg' },
   // ... add more photos as needed
 ];
-function PhotosALaCarteIntro() {
+function DroneALaCarteIntro() {
   const settings = {
     dots: true,
     infinite: true,
@@ -38,16 +38,14 @@ function PhotosALaCarteIntro() {
   };
 
   return (
-    <section className="py-16 bg-white text-gray-800">
+    <section className="py-16 bg-gray-100 text-gray-800">
       <div className="container mx-auto px-5">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-extrabold text-gray-900 mb-4">Photo Services</h2>
-          <p className="text-xl text-blue-600 font-semibold mb-6">Hand Blended Images + A Floor Plan for Every Shoot</p>
+          <h2 className="text-5xl font-extrabold text-gray-900 mb-4">Drone Services</h2>
+          <p className="text-xl text-blue-600 font-semibold mb-6">We charge just $95 for our 6 drone photo package.</p>
           <div className="max-w-3xl mx-auto text-lg text-gray-600">
             <p>
-              We offer simple flat rate pricing for our real estate images. For our 25 photo package, we charge $165 plus tax, and
-              for 40 photos we charge $195 plus tax, with floor plans included. No hidden fees, square footage or travel charges
-              within our service area.
+            Our photographers are FAA Part 107 Certified so you can rest easily knowing you will not only get high quality drone photos, but also legal drone photos!
             </p>
           </div>
         </div>
@@ -65,4 +63,4 @@ function PhotosALaCarteIntro() {
   );
 }
 
-export default PhotosALaCarteIntro;
+export default DroneALaCarteIntro;

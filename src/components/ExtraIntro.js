@@ -9,7 +9,7 @@ const photos = [
   { id: '3', src: '/base.jpeg' },
   // ... add more photos as needed
 ];
-function PhotosALaCarteIntro() {
+function ExtraIntro() {
   const settings = {
     dots: true,
     infinite: true,
@@ -38,16 +38,14 @@ function PhotosALaCarteIntro() {
   };
 
   return (
-    <section className="py-16 bg-white text-gray-800">
+    <section className="py-16 bg-gray-100 text-gray-800">
       <div className="container mx-auto px-5">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-extrabold text-gray-900 mb-4">Photo Services</h2>
-          <p className="text-xl text-blue-600 font-semibold mb-6">Hand Blended Images + A Floor Plan for Every Shoot</p>
+          <h2 className="text-5xl font-extrabold text-gray-900 mb-4">3D Tours + Twilight Photos & Much More</h2>
+          <p className="text-xl text-blue-600 font-semibold mb-6">We provide more than just the "standard" services that most real estate media companies offer.</p>
           <div className="max-w-3xl mx-auto text-lg text-gray-600">
             <p>
-              We offer simple flat rate pricing for our real estate images. For our 25 photo package, we charge $165 plus tax, and
-              for 40 photos we charge $195 plus tax, with floor plans included. No hidden fees, square footage or travel charges
-              within our service area.
+            Experience the allure of 3D tours – a selling asset that impresses both buyers and sellers alike! Our services extend beyond 3D tours to include floorplans, virtual staging, custom time-lapse images, and artistic closing gifts. Choose between standard twilight photos and virtual twilight photos for added versatility. At BRSE Real Estate Photography, we cover all your visual needs
             </p>
           </div>
         </div>
@@ -65,4 +63,4 @@ function PhotosALaCarteIntro() {
   );
 }
 
-export default PhotosALaCarteIntro;
+export default ExtraIntro;
