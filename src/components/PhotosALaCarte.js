@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { FaCamera, FaRulerCombined } from 'react-icons/fa';
+import { CartContext } from './CartContext';
 
 function PhotosALaCarte() {
   const [expandedId, setExpandedId] = useState(null); // State to track expanded card
-
+  const { addToCart } = useContext(CartContext);
   const alaCarteDetails = [
     // Define your A La Carte services here
     {
@@ -126,9 +127,9 @@ function PhotosALaCarte() {
                   </span>
                 </div>
                 <div className="text-center" style={{paddingTop:'1rem'}}>
-                  <Link to={service.link} className="inline-block bg-blue-500 text-white py-3 px-16 rounded hover:bg-blue-600 transition-colors duration-300">
-                    Select
-                  </Link>
+                <button onClick={() => addToCart(service)} className="inline-block bg-blue-500 text-white py-3 px-16 rounded hover:bg-blue-600 transition-colors duration-300">
+                Select
+                    </button>
                 </div>
               </div>
             </div>

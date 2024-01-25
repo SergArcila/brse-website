@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState , useContext} from 'react';
 import { Link } from 'react-router-dom';
 import { FaCamera, FaRulerCombined} from 'react-icons/fa';
+import { CartContext } from './CartContext';
 
 function Packages() {
   const [expandedId, setExpandedId] = useState(null); // State to track expanded card
-
+  const { addToCart } = useContext(CartContext);
   const packageDetails = [
     {
         id: 1,
@@ -132,9 +133,9 @@ function Packages() {
                   </span>
                 </div>
                 <div className="text-center" style={{paddingTop:'1rem'}}>
-                  <Link to={pkg.link} className="inline-block bg-blue-500 text-white py-3 px-16 rounded hover:bg-blue-600 transition-colors duration-300">
+                  <button onClick={() => addToCart(pkg)} className="inline-block bg-blue-500 text-white py-3 px-16 rounded hover:bg-blue-600 transition-colors duration-300">
                     Select
-                  </Link>
+                  </button>
                 </div>
               </div>
             </div>

@@ -15,8 +15,10 @@ export const CartProvider = ({ children }) => {
   const removeFromCart = (serviceId) => {
     const filteredCartItems = cartItems.filter(item => item.id !== serviceId);
     setCartItems(filteredCartItems);
-    const service = cartItems.find(item => item.id === serviceId);
-    setTotal(total - parseFloat(service.price.replace(/[^\d.]/g, '')));
+  
+    // Recalculate the total
+    const newTotal = filteredCartItems.reduce((sum, item) => sum + parseFloat(item.price.replace(/[^\d.]/g, '')), 0);
+    setTotal(newTotal);
   };
 
   return (

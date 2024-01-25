@@ -1,9 +1,21 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext} from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa'; // You'll need to install react-icons if you haven't already
 import { useLocation } from 'react-router-dom';
+import CartDisplayComponent from './CartDisplayComponent';
+import { CartContext } from './CartContext';
+import { FaShoppingCart } from 'react-icons/fa';
+
 
 function Header() {
+
+
+  const [isCartVisible, setIsCartVisible] = useState(true);
+  const { cartItems } = useContext(CartContext);
+
+  const toggleCart = () => {
+    setIsCartVisible(!isCartVisible);
+  };
     const [isScrolled, setIsScrolled] = useState(false);
     const location = useLocation();
     const [isMobileNavVisible, setIsMobileNavVisible] = useState(false); // Added state for mobile nav visibility
@@ -37,6 +49,7 @@ function Header() {
   
     const headerStyle = `fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${isScrolled ? 'bg-gray-800' : 'bg-gray-800 md:bg-transparent'}`;
   
+    
   return (
     <header className={headerClass} >
       <div className="container mx-auto flex items-center justify-between p-5">
@@ -66,8 +79,13 @@ function Header() {
             Book Now
           </NavLink>
         </div>
+        <div className="cart-icon-container px-5 "style={{paddingRight:"0rem"}} onClick={toggleCart}>
       </div>
 
+      {isCartVisible && <CartDisplayComponent />}
+      </div>
+
+      
       {/* Mobile Nav Menu */}
       {isMobileNavVisible && (
         <div className="md:hidden bg-gray-800">
