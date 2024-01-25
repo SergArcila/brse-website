@@ -4,9 +4,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const photos = [
-  { id: '1', src: '/pro.jpeg' },
-  { id: '2', src: '/plus.jpeg' },
-  { id: '3', src: '/base.jpeg' },
+  { id: '1', src: '/drone1.png' },
+  { id: '2', src: '/drone2.jpeg' },
+  { id: '3', src: '/drone3.jpeg' },
   // ... add more photos as needed
 ];
 function DroneALaCarteIntro() {

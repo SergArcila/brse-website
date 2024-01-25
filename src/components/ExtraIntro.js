@@ -4,9 +4,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const photos = [
-  { id: '1', src: '/pro.jpeg' },
-  { id: '2', src: '/plus.jpeg' },
-  { id: '3', src: '/base.jpeg' },
+  { id: '1', src: '/extra1.jpeg' },
+  { id: '2', src: '/extra3.jpeg' },
+  { id: '3', src: '/extra4.png' },
   // ... add more photos as needed
 ];
 function ExtraIntro() {

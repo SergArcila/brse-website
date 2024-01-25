@@ -14,7 +14,7 @@ function VideoServices() {
         { text: 'Reel/Social Media Walkthrough Video', icon: <FaVideo /> },
       ],
       link: '/reel-social-walkthrough',
-      src: '/reel-social-video-sample.jpg',
+      src: '/reel.jpeg',
       moreInfo: 'A quick, engaging video perfect for social media to give a walkthrough of your property highlights.'
     },
     {
@@ -27,7 +27,7 @@ function VideoServices() {
         { text: 'Reel/Social Media Walkthrough Video', icon: <FaVideo /> },
       ],
       link: '/social-media-bundle',
-      src: '/social-media-bundle-sample.jpg',
+      src: '/social.jpeg',
       moreInfo: 'The ultimate video package for social media, featuring a highlight reel and a full-length video to showcase your listing.'
     },
     {
@@ -38,7 +38,7 @@ function VideoServices() {
         { text: '60 Second Cinematic Video', icon: <FaVideo /> },
       ],
       link: '/60-second-video',
-      src: '/60-second-video-sample.jpg',
+      src: '/60s.jpeg',
       moreInfo: 'A one-minute cinematic video providing a comprehensive and engaging overview of the residential listing.'
     },
     {
@@ -49,7 +49,7 @@ function VideoServices() {
         { text: '120 Second Detailed Video', icon: <FaVideo /> },
       ],
       link: '/120-second-video',
-      src: '/120-second-video-sample.jpg',
+      src: '120s.jpeg',
       moreInfo: 'A detailed two-minute video for an immersive experience of the property, perfect for websites and presentations.'
     },
     // Add more services as needed
@@ -70,9 +70,9 @@ function VideoServices() {
             <div key={pkg.id} className="p-4 md:w-1/3 sm:w-1/2 w-full">
               <div className={`border-2 border-gray-200 px-4 py-6 rounded-lg shadow-lg bg-white ${expandedId === pkg.id ? 'mb-8' : ''}`}>
               <div className="w-full flex justify-center"> {/* This will center the image */}
-                  <img className="object-cover object-center rounded mb-4" alt={pkg.name} src={pkg.src} style={{ width: 'auto', maxHeight: '200px' }} />
+                  <img className="block mx-auto w-full h-auto rounded mb-4" alt={pkg.name} src={pkg.src} style={{ width: 'auto', maxHeight: '200px' }} />
                 </div>
-                <h3 className="title-font font-medium text-3xl text-gray-900 mb-3">{pkg.name}</h3>
+                <h3 className="title-font font-medium text-3xl text-gray-900 mb-3">{pkg.title}</h3>
                 <ul className={`${expandedId === pkg.id ? '' : 'mb-4'}`}>
                   {pkg.features.map((feature, index) => (
                     <li key={index} className="text-gray-600 flex items-center">

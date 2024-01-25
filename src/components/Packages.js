@@ -30,7 +30,7 @@ function Packages() {
         ],
         price: '$365.00',
         link: '/pro-media-package',
-        src: "/pro.jpeg",
+        src: "/pro2.jpeg",
         moreInfo: "Our Pro Package includes 40 Interior and Exterior Photos, a Schematic Floor Plan with room measurements along with a 3D version , Drone Photos, and a Marketing Kit! This is our most popular package and is designed for most standard listings!"
       },
       // New Plus Media Package
@@ -48,7 +48,7 @@ function Packages() {
         ],
         price: '$825.00',
         link: '/plus-media-package',
-        src: "/plus.jpeg",
+        src: "/plus2.jpeg",
         moreInfo: "Our Plus Package includes 40 Interior and Exterior Photos, a 60 Second Cinematic Video, a Matterport 3D Tour, Drone Photos, 2 Virtual Twilight Photos, a Schematic Floor Plan along with a 3D version, and a Marketing Kit! If you have a listing you want to pull out all the stops on, the plus package is designed to do just that!"
       },
       {

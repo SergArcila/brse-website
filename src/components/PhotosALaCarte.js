@@ -16,7 +16,7 @@ function PhotosALaCarte() {
         ],
         price: '$235.00',
         link: '/60-mls-photos',
-        src: '/photos1.jpg', // Replace with your image path
+        src: '/60.jpeg', // Replace with your image path
         moreInfo: 'Get a comprehensive portfolio of 60 high-quality MLS photos showcasing every aspect of your property, complemented with a basic floor plan complete with room measurements.'
       },
       {
@@ -28,7 +28,7 @@ function PhotosALaCarte() {
         ],
         price: '$195.00',
         link: '/40-mls-photos',
-        src: '/photos2.jpg', // Replace with your image path
+        src: '/40.jpeg', // Replace with your image path
         moreInfo: 'This package offers 40 MLS photos, ideal for capturing the essential features of your property, along with a floor plan detailing room sizes and layout.'
       },
       {
@@ -40,7 +40,7 @@ function PhotosALaCarte() {
           { text: 'Basic Floor Plan with Room Measurements', icon: <FaRulerCombined /> },
         ],
         link: '/25-mls-photos',
-        src: '/photos25.jpg',
+        src: '/25.jpeg',
         moreInfo: 'Perfect for highlighting the key areas of your property, this package offers 25 professionally taken MLS photos along with a floor plan detailing the essential measurements.'
       },
       {
@@ -52,7 +52,7 @@ function PhotosALaCarte() {
           { text: 'Basic Floor Plan with Room Measurements', icon: <FaRulerCombined /> },
         ],
         link: '/10-15-mls-photos',
-        src: '/photos10-15.jpg',
+        src: '/10.jpeg',
         moreInfo: 'Ideal for smaller properties or rentals, this package includes 10-15 MLS photos to cover the essentials, accompanied by a floor plan with room measurements.'
       },
       {
@@ -69,7 +69,7 @@ function PhotosALaCarte() {
           { text: 'Basic Floor Plan with Room Measurements', icon: <FaRulerCombined /> },
         ],
         link: '/20-20-20-package',
-        src: '/photos202020.jpg',
+        src: '/20p.jpeg',
         moreInfo: 'A comprehensive visual documentation package capturing the transformation of your property before, during, and after construction, including photos, reels, and a floor plan.'
     },    
     {
@@ -83,7 +83,7 @@ function PhotosALaCarte() {
           { text: 'Basic Floor Plan with Room Measurements', icon: <FaRulerCombined /> },
         ],
         link: '/20-20-20-photos',
-        src: '/photos202020.jpg',
+        src: '/20.jpeg',
         moreInfo: 'Document the progress of your property with 20 photos each of the before, during, and after stages of your construction project, along with a basic floor plan.'
       },
     // ... other A La Carte service objects
@@ -104,7 +104,7 @@ function PhotosALaCarte() {
           {alaCarteDetails.map((service) => (
             <div key={service.id} className="p-4 md:w-1/3 sm:w-1/2 w-full">
               <div className={`border-2 border-gray-200 px-4 py-6 rounded-lg shadow-lg bg-white ${expandedId === service.id ? 'mb-8' : ''}`}>
-                <img className="object-cover object-center rounded mb-4" alt={service.title} src={service.src} />
+                <img className="block mx-auto w-full h-auto rounded mb-4" alt={service.title} src={service.src} />
                 <h3 className="title-font font-medium text-3xl text-gray-900 mb-3">{service.title}</h3>
                 <ul className={`${expandedId === service.id ? '' : 'mb-4'}`}>
                   {service.features.map((feature, index) => (

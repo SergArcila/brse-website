@@ -4,9 +4,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const photos = [
-  { id: '1', src: '/pro.jpeg' },
-  { id: '2', src: '/plus.jpeg' },
-  { id: '3', src: '/base.jpeg' },
+  { id: '1', src: '/photo1.jpeg' },
+  { id: '2', src: '/photo2.jpeg' },
+  { id: '3', src: '/photo3.jpeg' },
   // ... add more photos as needed
 ];
 function PhotosALaCarteIntro() {

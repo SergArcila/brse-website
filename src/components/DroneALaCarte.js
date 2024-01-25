@@ -14,7 +14,7 @@ function DronesALaCarte() {
         { text: '12 High-Quality Drone Photos', icon: <FaCamera /> },
       ],
       link: '/drone-photos',
-      src: '/drone-photos-sample.jpg',
+      src: '/drone.jpeg',
       moreInfo: 'Capture your property from above with 12 high-quality drone photographs that provide a comprehensive view and standout imagery for your listings.'
     },
     {
@@ -25,7 +25,7 @@ function DronesALaCarte() {
           { text: '25 Drone Photos', icon: <FaCamera /> },
         ],
         link: '/25-drone',
-        src: '/comprehensive-aerial-sample.jpg',
+        src: '/drone25.jpg',
         moreInfo: 'This package includes 25 drone photos to showcase your property in its entirety.'
       },
     {
@@ -36,7 +36,7 @@ function DronesALaCarte() {
         { text: 'Aerial Only Video', icon: <FaCamera /> },
       ],
       link: '/aerial-video',
-      src: '/aerial-video-sample.jpg',
+      src: '/30sd.jpeg',
       moreInfo: 'A 30-second aerial video to showcase your property with stunning visuals from the sky, giving potential buyers a unique perspective of the property.'
     },
     // Sample additional drone service

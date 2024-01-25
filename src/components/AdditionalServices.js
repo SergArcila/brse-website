@@ -16,6 +16,7 @@ function AdditionalServices() {
       ],
       features: [{ text: '3D Matterport Tour', icon: <FaHouseDamage /> }],
       link: '/3d-matterport-tour',
+      src:'tour.png',
       moreInfo: 'Interactive 3D tour of your property, providing an immersive experience with various pricing based on square footage. Starting at $200.00 for a house 500-2999 SqFt and $250.00 for 3000S qFt+'
     },
     {
@@ -24,6 +25,7 @@ function AdditionalServices() {
       price: '$195.00',
       features: [{ text: 'Twilight Photos', icon: <FaSun /> }],
       link: '/twilight-photos',
+      src:'twilight.jpeg',
       moreInfo: 'Professional twilight photography to showcase your property in the best possible light with stunning sunset backgrounds.'
     },
     {
@@ -34,6 +36,7 @@ function AdditionalServices() {
         { text: '4 Virtual Twilight Photos', icon: <FaSun /> },
       ],
       link: '/virtual-twilight-photos',
+      src:'twilightv.jpeg',
       moreInfo: 'Enhance your property photos with a virtual twilight effect, including 4 exterior photos to capture the beauty of your home at dusk.'
     },
     {
@@ -42,6 +45,7 @@ function AdditionalServices() {
       price: '$50.00 per image',
       features: [{ text: 'Virtual Staging', icon: <FaCouch /> }],
       link: '/virtual-staging',
+      src:'virtual.jpeg',
       moreInfo: 'Transform empty spaces into beautifully staged rooms with our virtual staging service, making your listing more appealing.'
     },
     // Add more services as needed
@@ -62,7 +66,7 @@ function AdditionalServices() {
           {additionalServices.map((service) => (
             <div key={service.id} className="p-4 md:w-1/3 sm:w-1/2 w-full">
               <div className={`border-2 border-gray-200 px-4 py-6 rounded-lg shadow-lg bg-white ${expandedId === service.id ? 'mb-8' : ''}`}>
-                <img className="object-cover object-center rounded mb-4" alt={service.title} src={service.src} />
+                <img className="block mx-auto w-full h-auto rounded mb-4" alt={service.title} src={service.src} />
                 <h3 className="title-font font-medium text-3xl text-gray-900 mb-3">{service.title}</h3>
                 <ul className={`${expandedId === service.id ? '' : 'mb-4'}`}>
                   {service.features.map((feature, index) => (
