@@ -12,7 +12,7 @@ import End from '../components/ServiceConclusion';
 function PortfolioPage() {
   return (
     <div>
-    
+    <Header/>
     <div className='py-16' style={{paddingBottom: '1rem'}}>
     <AboutIntro />
     </div>

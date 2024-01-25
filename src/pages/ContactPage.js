@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 function ContactPage() {
   return (
     <div>
-    
+    <Header/>
     <div className="py-16">
     <Contact />
     </div>

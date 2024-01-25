@@ -44,7 +44,6 @@ function App() {
   return (
     <CartProvider>
     <Router>
-    <Header toggleCart={toggleCart} />
       <ScrollToTop />
       <AnimatedRoutes /> {/* Use the wrapper component */}
     </Router>

@@ -18,7 +18,7 @@ import Footer from '../components/Footer';
 function ServicePage() {
   return (
     <div>
-    
+    <Header />
     <Services />
     <Packages />
     <PhotosIntro />

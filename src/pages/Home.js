@@ -13,7 +13,7 @@ import Highlighted from '../components/ServicesHighlight'
 function Home() {
   return (
     <div>
-         
+         <Header />
          <Hero />
          <Value />
          <Highlighted />
