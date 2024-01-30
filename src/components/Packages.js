@@ -99,17 +99,17 @@ function Packages() {
   return (
     <div className="bg-gray-100 py-16">
       <div className="text-center mb-12">
-      <div className="text-center mb-4">
-        <h2 className="text-6xl font-bold">Our Packages</h2>
+        <div className="text-center mb-4">
+          <h2 className="text-6xl font-bold">Our Packages</h2>
         </div>
         <p className="text-xl text-blue-600 font-semibold mb-6">Created just for you. The Realtor® </p>
       </div>
       <div className="container mx-auto px-4">
-        <div className="flex flex-wrap -mx-4">
+        <div className="flex flex-wrap -mx-4 justify-center">
           {packageDetails.map((pkg) => (
             <div key={pkg.id} className="p-4 md:w-1/3 sm:w-1/2 w-full">
               <div className={`border-2 border-gray-200 px-4 py-6 rounded-lg shadow-lg bg-white ${expandedId === pkg.id ? 'mb-8' : ''}`}>
-              <div className="w-full flex justify-center"> {/* This will center the image */}
+                <div className="w-full flex justify-center"> {/* This will center the image */}
                   <img className="object-cover object-center rounded mb-4" alt={pkg.name} src={pkg.src} style={{ width: 'auto', maxHeight: '200px' }} />
                 </div>
                 <h3 className="title-font font-medium text-3xl text-gray-900 mb-3">{pkg.name}</h3>
@@ -124,7 +124,7 @@ function Packages() {
                   <p className="text-gray-600 mb-4">{pkg.moreInfo}</p>
                 )}
                 <div className="text-center mt-4 flex justify-between items-center">
-                  <span className="text-lg font-bold">from {pkg.price}</span>
+                  <span className="text-2xl font-bold">from {pkg.price}</span> {/* Increased font size */}
                   <span 
                     className="text-blue-500 hover:text-blue-600 cursor-pointer"
                     onClick={() => toggleExpansion(pkg.id)}
@@ -132,14 +132,23 @@ function Packages() {
                     {expandedId === pkg.id ? 'Less' : 'Learn More'}
                   </span>
                 </div>
+                {/* Commented out the button */}
+                {/*
                 <div className="text-center" style={{paddingTop:'1rem'}}>
                   <button onClick={() => addToCart(pkg)} className="inline-block bg-blue-500 text-white py-3 px-16 rounded hover:bg-blue-600 transition-colors duration-300">
                     Select
                   </button>
                 </div>
+                */}
               </div>
             </div>
           ))}
+          <div className="text-center mt-6">
+                {/* Book Now Button */}
+                <a href="/booking" className=" text-xl font-medium inline-block bg-blue-500 text-white py-4 px-16 rounded hover:bg-blue-600 transition-colors duration-300">
+                  Book Now
+                </a>
+              </div>
         </div>
       </div>
     </div>

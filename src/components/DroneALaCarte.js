@@ -102,14 +102,23 @@ function DronesALaCarte() {
                   </span>
                 </div>
                 <div className="text-center" style={{paddingTop:'1rem'}}>
+                  {/*
                   <Link to={service.link} className="inline-block bg-blue-500 text-white py-3 px-16 rounded hover:bg-blue-600 transition-colors duration-300">
                     Select
                   </Link>
+                  */}
                 </div>
               </div>
             </div>
           ))}
+          
         </div>
+        <div className="text-center mt-6">
+                {/* Book Now Button */}
+                <a href="/booking" className=" text-xl font-medium inline-block bg-blue-500 text-white py-4 px-16 rounded hover:bg-blue-600 transition-colors duration-300">
+                  Book Now
+                </a>
+              </div>
       </div>
     </div>
   );
