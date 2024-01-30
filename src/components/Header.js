@@ -79,8 +79,10 @@ function Header() {
             Book Now
           </NavLink>
         </div>
+        {/*
         <div className="cart-icon-container px-5 "style={{paddingRight:"0rem"}} onClick={toggleCart}>
       </div>
+      */}
 
       {isCartVisible && <CartDisplayComponent />}
       </div>

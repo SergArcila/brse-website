@@ -13,8 +13,8 @@ function ServiceConclusion() {
             to contact@brsephotography.com or call us at (786) 203-9240 and we'd love to answer your questions!
             </p>
           </div>
-          <Link to="/book-now" className="mt-8 inline-block bg-orange-500 text-white font-bold py-3 px-8 rounded-lg hover:bg-orange-600 transition-colors duration-300">
-            Book Now
+          <Link to="/contact" className="mt-8 inline-block bg-orange-500 text-white font-bold py-3 px-8 rounded-lg hover:bg-orange-600 transition-colors duration-300">
+            Contact us
           </Link>
         </div>
       </div>
