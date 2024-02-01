@@ -90,7 +90,16 @@ const BookNowPage = () => {
   </p>
 
   <p className="mt-5">
-    For booking, please provide your full name, address of the property, requested services, and preferred date. Note: A 50% deposit is required for new customers before visiting the property. We accept credit cards (with a 5% processing fee), Venmo, Cashapp, Zelle, and crypto payments.
+    For booking, please provide your full name, address of the property, requested services, and preferred date. Note: A 50% deposit is required for new customers before visiting the property.
+  </p>
+  <p className="text-xl mt-4 font-bold ">Payment Options:</p>
+  <p className="mt-2">
+    <ul>
+      <li>Credit Cards (with a 5% processing fee): <a href="https://square.link/u/6jGkMy56?src=sheet" className="text-blue-600 hover:text-blue-800" target="_blank">Pay with Square</a></li>
+      <li>Venmo: <a href="https://www.venmo.com/u/BRSEphotography" className="text-blue-600 hover:text-blue-800" target="_blank">BRSEphotography on Venmo</a></li>
+      <li>Zelle: Send to <a href="mailto:ArcilaREStudios@gmail.com" className="text-blue-600 hover:text-blue-800">ArcilaREStudios@gmail.com</a></li>
+      <li>For crypto payments, please <a href="mailto:contact@brsephotography.com" className="text-blue-600 hover:text-blue-800">inquire via email</a>.</li>
+    </ul>
   </p>
 </div>
 <div className="bg-white"> 
