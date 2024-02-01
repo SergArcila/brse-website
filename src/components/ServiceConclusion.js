@@ -10,7 +10,11 @@ function ServiceConclusion() {
           <div className=" max-w-3xl mx-auto text-lg text-gray-600 py-3">
             <p>
             Click the button below to book a shoot! If you'd prefer to talk to us first, please send us an email
-            to contact@brsephotography.com or call us at (786) 203-9240 and we'd love to answer your questions!
+            to <a href="mailto:contact@brsephotography.com" className="text-blue-600 hover:text-blue-800">
+      contact@brsephotography.com
+    </a> or call us at <a href="tel:+17862039240" className="text-blue-600 hover:text-blue-800">
+      (786) 203-9240
+    </a> and we'd love to answer your questions!
             </p>
           </div>
           <Link to="/contact" className="mt-8 inline-block bg-orange-500 text-white font-bold py-3 px-8 rounded-lg hover:bg-orange-600 transition-colors duration-300">
