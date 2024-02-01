@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const BookNowPage = () => {
         const serviceCategories = [
@@ -109,9 +110,21 @@ const BookNowPage = () => {
               ))}
             </ul>
           </div>
+          
         </div>
+        
       ))}
+      <div className= "text-center mb-16">
+      <p className="mt-5 ">
+    If you want more information regarding our services, please check out our services page:
+  </p>
+  <Link to="/services" className="mt-8 inline-block bg-blue-500 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-600 transition-colors duration-300">
+            Services
+          </Link>
+
+          </div>
     </div>
+    
     
     </div>
     </div>
