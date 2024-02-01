@@ -12,12 +12,12 @@ function CartDisplayComponent() {
     };
   return (
     <div className="cart-dropdown relative">
+      {/*
       <FaShoppingCart 
         size="1.5em" 
         className="text-white cursor-pointer" 
         onClick={toggleDropdown}
       />
-
       {cartItems.length > 0 && (
         <span className="cart-item-count absolute -top-2 -right-2 bg-blue-600 text-white text-xs rounded-full px-2 py-1">
           {cartItems.length}
@@ -52,7 +52,9 @@ function CartDisplayComponent() {
         </div>
       </div>
         )}
+        */}
     </div>
+    
   );
 }
 

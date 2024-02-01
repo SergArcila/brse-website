@@ -10,10 +10,10 @@ function ContactUsSection() {
 
         <div className="container px-5 py-12 mx-auto flex sm:flex-nowrap flex-wrap">
             {/* Left Side Content */}
-            <div className="lg:w-2/4 md:w-1/2 flex flex-col justify-start">
+            <div className="flex flex-col justify-start">
                 <div className="text-black p-4 rounded-tr-md rounded-bl-md">
                     <h2 className="text-gray-900 text-3xl mb-1 font-medium title-font pb-4">Let's Discuss Your Next Project</h2>
-                    <p className="leading-relaxed mb-5 text-gray-600 text-lg">Get in touch with us, and we'd love to discuss your next real estate media project! From listing media, to branding content & lead generation we have you covered! We service Alachua and neighboring counties.</p>
+                    <p className="leading-relaxed mb-5 text-gray-600 text-lg">Get in touch with us, and we'd love to discuss your next real estate media project! From listing media, to branding content & lead generation we have you covered! We service Alachua and neighboring counties. For booking, please provide your full name, address of the property, requested services, and preferred date. Note: A 50% deposit is required for new customers before visiting the property. We accept credit cards (with a 5% processing fee), Venmo, Cashapp, Zelle, and crypto payments.</p>
                 </div>
   <div className="bg-white bg-opacity-75 relative flex flex-wrap py-6 rounded shadow-md">
             <div className="lg:w-1/2 px-6">
@@ -22,14 +22,20 @@ function ContactUsSection() {
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
-              <a className="text-indigo-500 leading-relaxed">contact@brsephotography.com</a>
+              <a href="mailto:contact@brsephotography.com" className="text-blue-600 hover:text-blue-800">
+      contact@brsephotography.com
+    </a>
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
-              <p className="leading-relaxed">786-203-9240</p>
+              <a href="tel:+17862039240" className="text-blue-600 hover:text-blue-800">
+      (786) 203-9240
+    </a>
             </div>
           </div>
 </div>
+    
         {/* Updated form */}
-        <div className="lg:w-3/5 md:w-1/2 bg-white bg-opacity-75 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+       
+          {/*
           <h2 className="text-gray-900 text-xl mb-1 font-medium title-font">How Can We Help?</h2>
           <p className="leading-relaxed mb-5 text-gray-600">We'd love to discuss your real estate media needs. Fill out the form, and we'll get back to you as soon as possible!</p>
           <div className="relative mb-4">
@@ -46,8 +52,10 @@ function ContactUsSection() {
           </div>
           <button className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
           <p className="text-xs text-gray-500 mt-3">We'll get back to you as soon as possible.</p>
+  */}
         </div>
-      </div>
+      
+      
     </section>
   );
 }

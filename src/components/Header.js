@@ -30,7 +30,7 @@ function Header() {
     }, []);
   
     // Determine if the current path is one that requires a solid header
-  const needsSolidHeader = location.pathname === '/contact' || location.pathname === '/about';
+  const needsSolidHeader = location.pathname === '/contact' || location.pathname === '/about' || location.pathname === '/booking';
 
   // Build the header class string based on the scroll position and current path
   const headerClass = `fixed w-full z-30 transition duration-300 ease-in-out ${
@@ -79,8 +79,10 @@ function Header() {
             Book Now
           </NavLink>
         </div>
+        {/*
         <div className="cart-icon-container px-5 "style={{paddingRight:"0rem"}} onClick={toggleCart}>
       </div>
+      */}
 
       {isCartVisible && <CartDisplayComponent />}
       </div>

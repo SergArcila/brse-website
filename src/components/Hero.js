@@ -1,5 +1,5 @@
 import React from 'react';
-import Video1 from './background.mp4';
+import Video1 from './hero.mp4';
 import { Helmet } from 'react-helmet'; // Ensure you have installed the react-helmet package
 import { Link } from 'react-router-dom';
 

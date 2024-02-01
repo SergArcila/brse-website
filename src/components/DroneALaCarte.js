@@ -48,7 +48,7 @@ function DronesALaCarte() {
           { text: 'Aerial Only Video', icon: <FaCamera /> },
         ],
         link: '/aerial-video',
-        src: '/aerial-video-sample.jpg',
+        src: '/drone60sv.jpg',
         moreInfo: 'A 60-second aerial video to showcase your property with stunning visuals from the sky, giving potential buyers a unique perspective of the property.'
       },
       {
@@ -60,7 +60,7 @@ function DronesALaCarte() {
           { text: '1 Minute Aerial Video', icon: <FaCamera /> },
         ],
         link: '/comprehensive-aerial',
-        src: '/comprehensive-aerial-sample.jpg',
+        src: '/CAPDRONE.jpg',
         moreInfo: 'The complete aerial package includes 20 drone photos, a 1-minute video, and a 360° drone tour to showcase your property in its entirety.'
       },
     // Add more services as needed
@@ -102,14 +102,23 @@ function DronesALaCarte() {
                   </span>
                 </div>
                 <div className="text-center" style={{paddingTop:'1rem'}}>
+                  {/*
                   <Link to={service.link} className="inline-block bg-blue-500 text-white py-3 px-16 rounded hover:bg-blue-600 transition-colors duration-300">
                     Select
                   </Link>
+                  */}
                 </div>
               </div>
             </div>
           ))}
+          
         </div>
+        <div className="text-center mt-6">
+                {/* Book Now Button */}
+                <a href="/booking" className=" text-xl font-medium inline-block bg-blue-500 text-white py-4 px-16 rounded hover:bg-blue-600 transition-colors duration-300">
+                  Book Now
+                </a>
+              </div>
       </div>
     </div>
   );

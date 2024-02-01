@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Contact from './pages/ContactPage';
 import Services from './pages/ServicesPage';
 import About from './pages/AboutPage';
+import Booking from './pages/BookingPage';
 import ScrollToTop from './components/ScrollToTop';
 import { CartProvider } from './components/CartContext';
 import Sidebar from './components/CheckoutSideBar';
@@ -23,6 +24,7 @@ const AnimatedRoutes = () => {
     { path: '/contact', element: <Contact /> },
     { path: '/about', element: <About /> },
     { path: '/services', element: <Services /> },
+    {path: '/booking', element: <Booking /> },
     // Add other routes as needed
   ]);
 

@@ -4,9 +4,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const photos = [
-  { id: '1', src: '/pro.jpeg' },
-  { id: '2', src: '/plus.jpeg' },
-  { id: '3', src: '/base.jpeg' },
+  { id: '1', src: '/videointro1.gif' },
+  { id: '2', src: '/videointro2.gif' },
+  { id: '3', src: '/videointro3.gif' },
   // ... add more photos as needed
 ];
 function VideosALaCarte() {
