@@ -9,9 +9,6 @@ import About from './pages/AboutPage';
 import Booking from './pages/BookingPage';
 import ScrollToTop from './components/ScrollToTop';
 import { CartProvider } from './components/CartContext';
-import Sidebar from './components/CheckoutSideBar';
-import CartDisplayComponent from './components/CartDisplayComponent';
-import Header from './components/Header';
 
 
 import './App.css';

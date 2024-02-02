@@ -4,7 +4,7 @@ import { FaBars } from 'react-icons/fa'; // You'll need to install react-icons i
 import { useLocation } from 'react-router-dom';
 import CartDisplayComponent from './CartDisplayComponent';
 import { CartContext } from './CartContext';
-import { FaShoppingCart } from 'react-icons/fa';
+
 
 
 function Header() {

@@ -1,7 +1,7 @@
 // CartDisplayComponent.js
 import React, { useContext, useState } from 'react';
 import { CartContext } from './CartContext';
-import { FaShoppingCart, FaTimes } from 'react-icons/fa';
+
 
 function CartDisplayComponent() {
     const { cartItems, total, removeFromCart } = useContext(CartContext);

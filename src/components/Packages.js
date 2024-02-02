@@ -1,5 +1,4 @@
 import React, { useState , useContext} from 'react';
-import { Link } from 'react-router-dom';
 import { FaCamera, FaRulerCombined} from 'react-icons/fa';
 import { CartContext } from './CartContext';
 

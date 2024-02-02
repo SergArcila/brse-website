@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { FaCamera, FaDrone } from 'react-icons/fa';
 
 function DronesALaCarte() {
