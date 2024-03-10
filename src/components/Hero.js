@@ -1,9 +1,15 @@
-import React from 'react';
-import Video1 from './hero.mp4';
+import React, { useState } from 'react';
+import Video1 from './Hero.m4v';
 import { Helmet } from 'react-helmet'; // Ensure you have installed the react-helmet package
 import { Link } from 'react-router-dom';
 
 function Hero() {
+  const [videoLoaded, setVideoLoaded] = useState(false);
+
+  const handleVideoLoaded = () => {
+    setVideoLoaded(true);
+  };
+
   return (
     <>
       {/* Ensuring the font is loaded */}
@@ -13,7 +19,7 @@ function Hero() {
 
       <div className="relative flex items-center justify-center min-h-screen text-white font-montserrat">
         {/* Background Video */}
-        <video autoPlay loop muted className="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover" style={{ zIndex: -1 }}>
+        <video autoPlay loop muted playsInline className="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover" style={{ zIndex: -1 }}>
           <source src={Video1} type="video/mp4" />
         </video>
 
