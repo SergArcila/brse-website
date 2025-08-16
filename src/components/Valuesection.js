@@ -10,7 +10,7 @@ function ValuesSection() {
         <h2 className="text-gray-900 text-6xl mb-4 font-bold title-font pb-3">
   We Exist To Serve You, <span className="text-orange-500">The Agent</span>
 </h2>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">At BRSE Real Estate Photography, we're not just a company; we're your creative partners in real estate marketing. We specialize in crafting striking visuals through professional property photography and videography, enhancing your brand identity, and supporting your sales efforts. Our skilled team, comprising over two decades of collective experience with photographers, visual editors, and client relations specialists, is at the forefront of delivering bespoke real estate media solutions. Your dedication to your brand resonates with us, and we're here to ensure that every snapshot and frame adds value to your hard-earned reputation.
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">At Arcila Real Estate Studios, we're not just a company; we're your creative partners in real estate marketing. We specialize in crafting striking visuals through professional property photography and videography, enhancing your brand identity, and supporting your sales efforts. Our skilled team, comprising over two decades of collective experience with photographers, visual editors, and client relations specialists, is at the forefront of delivering bespoke real estate media solutions. Your dedication to your brand resonates with us, and we're here to ensure that every snapshot and frame adds value to your hard-earned reputation.
 </p>
         </div>
         <div className="flex flex-wrap">

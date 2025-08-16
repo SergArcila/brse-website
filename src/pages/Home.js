@@ -10,12 +10,14 @@ import Footer from '../components/Footer';
 import Value from '../components/Valuesection'
 import Highlighted from '../components/ServicesHighlight'
 import { Link } from 'react-router-dom';
+import SmallPortfoilio from '../components/SmallPortfoilio';
 
 function Home() {
   return (
     <div>
          <Header />
          <Hero />
+         <SmallPortfoilio />
          <Value />
          <Highlighted />
          <Testimonials />

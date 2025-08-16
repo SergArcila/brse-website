@@ -55,7 +55,7 @@ function Header() {
       <div className="container mx-auto flex items-center justify-between p-5">
         {/* Logo */}
         <Link to="/" className="flex title-font font-medium items-center text-white">
-          <img src="/logo2.png" alt="BRSE Photography Logo" className="w-15 h-12" />
+          <img src="/logo2.png" alt="Arcila RE Photography Logo" className="w-15 h-12" />
         </Link>
 
         {/* Mobile Nav Icon */}
@@ -67,10 +67,10 @@ function Header() {
 
         {/* Navigation Links */}
         <nav className={`hidden md:flex flex-grow items-center justify-center ${isMobileNavVisible ? 'flex' : 'hidden'}`}>
-          <NavLink to="/" className={({ isActive }) => `mx-5 hover:text-gray-300 ${isActive ? 'text-gray-300' : 'text-white'}`}>Home</NavLink>
-          <NavLink to="/services" className={({ isActive }) => `mx-5 hover:text-gray-300 ${isActive ? 'text-gray-300' : 'text-white'}`}>Services</NavLink>
-          <NavLink to="/about" className={({ isActive }) => `mx-5 hover:text-gray-300 ${isActive ? 'text-gray-300' : 'text-white'}`}>About us</NavLink>
-          <NavLink to="/contact" className={({ isActive }) => `mx-5 hover:text-gray-300 ${isActive ? 'text-gray-300' : 'text-white'}`}>Contact</NavLink>
+          <NavLink to="/" className={({ isActive }) => ` text-lg mx-5 hover:text-gray-300 ${isActive ? 'text-gray-300' : 'text-white'}`}>Home</NavLink>
+          <NavLink to="/services" className={({ isActive }) => `text-lg mx-5 hover:text-gray-300 ${isActive ? 'text-gray-300' : 'text-white'}`}>Services</NavLink>
+          <NavLink to="/about" className={({ isActive }) => ` text-lg mx-5 hover:text-gray-300 ${isActive ? 'text-gray-300' : 'text-white'}`}>About us</NavLink>
+          <NavLink to="/contact" className={({ isActive }) => ` text-lg mx-5 hover:text-gray-300 ${isActive ? 'text-gray-300' : 'text-white'}`}>Contact</NavLink>
         </nav>
 
         {/* Book Now Button */}

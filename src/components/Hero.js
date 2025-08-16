@@ -30,7 +30,7 @@ function Hero() {
         <div className="z-10 p-4 text-center">
           {/* Logo */}
           
-          <img src={"/logo6.png"} alt="BRSE Real Estate Photography" className="mx-auto mb-4" style={{marginBottom: '1rem', maxHeight:"250px", marginTop: '-4rem'}} />
+          <img src={"/logo6.png"} alt="Arcila Real Estate Photography" className="mx-auto mb-4" style={{marginBottom: '1rem', maxHeight:"250px", marginTop: '-4rem'}} />
           
 
           {/* Text */}
